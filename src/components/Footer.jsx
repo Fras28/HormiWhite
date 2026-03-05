@@ -96,7 +96,7 @@ const Footer = () => (
         <div className="flex items-center gap-3">
           <span className="text-slate-500 dark:text-slate-400 text-xs">Desarrollado por</span>
           <a 
-            href="https://www.instagram.com/mortonsoluciones/"
+            href="https://www.instagram.com/morton.desarrollos/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:opacity-80 transition-opacity"
