@@ -44,7 +44,7 @@ const AboutPage = () => {
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen pt-8">
       <SEO 
         title="Nuestra Historia y Trayectoria"
         description="Conocé la historia de HormiWhite. Desde 2010 liderando el mercado de hormigón elaborado en Bahía Blanca. Expansión, tecnología y compromiso."

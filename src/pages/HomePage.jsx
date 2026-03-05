@@ -65,7 +65,7 @@ const HomePage = () => {
   }
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col pt-8">
       <SEO 
         title="Hormigón Elaborado en Bahía Blanca"
         description="Líderes en hormigón elaborado de alta resistencia. Más de 20 años de experiencia, flota de 25+ motohormigoneras, certificación CIRSOC 201. Cotizá online."

@@ -42,7 +42,7 @@ const FacilitiesPage = () => {
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen pt-8">
       <SEO 
         title="Instalaciones y Flota"
         description="Conocé nuestra planta automatizada con capacidad de 120m³/hora y flota de 25+ motohormigoneras. Infraestructura líder en Bahía Blanca."

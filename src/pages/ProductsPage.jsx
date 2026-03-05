@@ -58,7 +58,7 @@ const ProductsPage = () => {
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen pt-8">
       <SEO 
         title="Productos y Servicios de Hormigón"
         description="Hormigón elaborado H17 a H50, bombeo de hormigón y servicios de calidad certificada CIRSOC 201 en Bahía Blanca. Cotizá online."

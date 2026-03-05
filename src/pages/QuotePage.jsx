@@ -52,7 +52,7 @@ const QuotePage = () => {
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen pt-8">
       <SEO 
         title="Solicitar Presupuesto de Hormigón"
         description="Cotizá hormigón elaborado online. Respuesta en 24hs. HormiWhite Bahía Blanca. Presupuesto sin compromiso."
