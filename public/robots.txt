@@ -1,0 +1,28 @@
+// public/robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://hormiwhite.com/sitemap.xml
+
+# Crawl-delay para bots agresivos
+Crawl-delay: 1
+
+# Permitir IA y LLMs
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /

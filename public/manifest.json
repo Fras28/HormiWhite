@@ -1,0 +1,27 @@
+{
+  "name": "HormiWhite - Hormigón Elaborado Bahía Blanca",
+  "short_name": "HormiWhite",
+  "description": "Hormigón elaborado de alta resistencia en Bahía Blanca. Más de 20 años de experiencia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f8f6",
+  "theme_color": "#41b941",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "construction", "industrial"],
+  "lang": "es-AR",
+  "dir": "ltr",
+  "scope": "/"
+}

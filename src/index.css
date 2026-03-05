@@ -1,0 +1,29 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.concrete-overlay {
+  background-image: linear-gradient(rgba(246, 248, 246, 0.92), rgba(246, 248, 246, 0.92)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuDDgawdDMz_PhQt5ZC0q9czK8GzVFvkfjlZlqzKFsnRhJc2y246_rgTiXJLS4yJ4WGVQLzoRWlWw1Q-cpwTqpZbLlbbW73cX9SExeBs7O6O7yG9trTEKguQmXazIuWLNp-W7m86VjurQt2zyzBFTfdlEtRCuDAbdVCoG9R5A4EUM7HuaCBGPza5CPGKVxCbOy9wUYl6G-pCbIJlRLG8nQTC-PVIrPAurWJdRmttYKyyecciINTq4w_iaUnZwtFgkELMNYfUFjRypSoh);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
