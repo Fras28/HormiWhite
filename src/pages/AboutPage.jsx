@@ -3,6 +3,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import SEO from '../components/SEO'
+import TimeLine from "../assets/Backgrounds/TimeLine.jpg"
 
 const AboutPage = () => {
   const timeline = [
@@ -63,7 +64,7 @@ const AboutPage = () => {
               <img 
                 alt="Planta de HormiWhite en Bahía Blanca - Instalaciones industriales" 
                 className="w-full h-full object-cover" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXkarCQfdW47kLal0j6gZA1KeDDzBEntzhFPixNdehCa3YODLwftWwznAeSa_EuIiZTeyaOAXCwFo4wgjmoW0hHiHeLep2fQEdrRl0iv8fwMRa05U4vCyi-12WD-DpYKwBTAAEstXHMNjnUMHtB7yLf8uksOvbq6VXxop--m3NjE8DI_1Dlhf0KOqyg0Zsbp86FVnQs37JBwC5dpnTweJjqvsYjmJFVOL03se_z6rbzhAJCxCFj1GihmHmx-ws1OjA-OVKmB2Ektx6"
+                src={TimeLine}
                 loading="lazy"
               />
             </div>

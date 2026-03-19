@@ -3,18 +3,20 @@ import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import SEO from '../components/SEO'
+import Hormigon from "../assets/Backgrounds/Hormigon.jpg"
+import Bomba from "../assets/Backgrounds/Bomba.jpg"
 
 const ProductsPage = () => {
   const products = [
     { 
       title: 'Hormigón Elaborado', 
       tag: 'H17 a H50', 
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuArmPD5FX1zzYZY-UAJBK3AB_OJKFlhIDuA-BqqCv73Zvuxxd0K-tYc7E5tLouUTftsRYsOFL6YUPYRw86ohrdzQ7_a2O51rvLoRB36bnaX0sOMVxKqr6VRnC8RWmOhNXjQrW8oTEVLt-nNHXtz5R2HG_-W4GWWdCzyfzFoQjUY1f32OQoixSyineMa3RipQ4pUrRWKE20O66uzyRkalQikGciowCpoqyXLsWj8RuSxYY9fq-BmXgkPLSzxQPFa-xDZLASVGZVTf8FZ', 
+      img: Hormigon, 
       desc: 'Mezclas dosificadas por peso con tecnología automatizada. Garantizamos resistencia y durabilidad.' 
     },
     { 
       title: 'Bombeo de Hormigón', 
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBivBhzDmupwvY2UiUcI_0Y0vrzTKdZ_S6_w5uGwVCjVMicATrl-1a_087GpxL3chG-mxqmf0TfmKo8UISifCXJiHP7uO6Xv0OKBsnBvZwqNmc-aEdFUmmcm6vkfAK2a9RhvoO-yU7lYAU-HAS0b-9-eljyU_Kk8m6SZJVGu-0OTHZUdOph-FT7PdQ0CKvhcfgxlCCPj4OynbBxcL18oXdMhSLKWc-r3KuU_6zyxdsvIKlMhDNkqUdrLBlNSPLtM0sPKXZgPT39WZH-', 
+      img: Bomba, 
       desc: 'Equipos de bombeo de última generación para alcanzar alturas y distancias críticas en obra.' 
     }
   ]

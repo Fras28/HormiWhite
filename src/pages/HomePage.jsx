@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import SEO from '../components/SEO'
+import bgHome from "../assets/Backgrounds/bgHero.mp4"
+import Logistrica from "../assets/Backgrounds/LogisticaIndustrial.jpg"
 
 const HomePage = () => {
   const navigate = useNavigate()
@@ -79,11 +81,22 @@ const HomePage = () => {
         {/* Hero Section */}
         <div className="@container relative">
           <div className="relative flex min-h-[85vh] flex-col items-start justify-center px-6 py-20 lg:px-20 overflow-hidden">
-            <div 
-              className="absolute inset-0 z-0 bg-cover bg-center" 
-              style={{
-                backgroundImage: "linear-gradient(rgba(20, 30, 20, 0.7), rgba(55, 65, 81, 0.6)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAPYbGEvBFZd9d-bDhpWDzpeH5i877vOqbGYA1vj1QKhWo33DBnmgnZpww8zUrmncixjKuo8ND5dgmJDx1KQcA5xmrM-so9SRwCG8YRJrGp0xauOfVEL3PLKRmWCaAOXPBNedFybX_u_iXdeIRmCB3egxrtOec4WCjVusF77G2C8hNZWQks7J-Gz4otWgj-zMzH1sA15RssutdiPN3oTod6k-FWMTI-L0lBWjhF-U8XuIAKrrPURyiMuUskcGZFjBJEd2mGj2oSeW5-')"
-              }}
+            {/* Video background */}
+            <video
+              className="absolute inset-0 z-0 w-full h-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              aria-hidden="true"
+              
+            >
+              <source src={bgHome} type="video/mp4" />
+            </video>
+            {/* Overlay gradient encima del video */}
+            <div
+              className="absolute inset-0 z-[1]"
+              style={{ background: "linear-gradient(rgba(20, 30, 20, 0.7), rgba(55, 65, 81, 0.6))" }}
             ></div>
             <div className="relative z-10 max-w-4xl flex flex-col gap-8">
               <div className="flex flex-col gap-4">
@@ -188,8 +201,8 @@ const HomePage = () => {
             <figure className="flex-1 w-full h-[400px] rounded-2xl overflow-hidden relative border-4 border-white dark:border-background-dark shadow-2xl">
               <img 
                 alt="Planta industrial de HormiWhite produciendo hormigón elaborado en Bahía Blanca" 
-                className="w-full h-full object-cover" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbceoD-JYzJpcL-Ky1n5_EaUZKfcS-tuBhzbFYwDT-nrYNz3n_JHgqEwhalMCLdi-O7H2lxExUURylSzWKExt7E0McC6-9xtoHIop308PkgMdPDydLE3-D7ETl7q3kXTz64XZu6dg_n_y_hQky62Pjg1FyYdstf7cHCDs_X713wIL87EDL8cboKGZjerQ-jILH_bc79HdZTuAlMAHkUhMQKOUET9iTzV1FLmO8U9exABJMsWV9JRMKYbhs7OS0_EEVVK1kEjybc819"
+                className="w-full h-full object-fill" 
+                src={Logistrica}
                 loading="lazy"
               />
             </figure>

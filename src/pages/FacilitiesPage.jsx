@@ -3,6 +3,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import SEO from '../components/SEO'
+import Flota from "../assets/Backgrounds/Flota.jpg"
 
 const FacilitiesPage = () => {
   const gallery = [
@@ -12,7 +13,7 @@ const FacilitiesPage = () => {
     },
     { 
       title: 'Flota de Motohormigoneras', 
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAyBzt2GUiU8lqKqbA2XlbWHK_r75x0R5pDkMRFeFk9jBQ-8KmOs3ATL5UhvPpV8tH6t7NapsrMMmIEhkzwozpu0ZWd0Zno-VXSCp_MupEhq8tARjqmYKRv2HmDgY3EH3wzpBR9Hx0jwi5xk-cHa-llgQsiMqVnyjvqLbxlZcAGe_TXKSE7MlJrxYvY8fWkD1531VrlyzflKeud637iELwgd2WAnIHqmy5xle6uDmF_6VXb7S_QxfKvCJMRej6Y8RCUaJyl_YdRYUtf' 
+      img: Flota 
     }
   ]
 

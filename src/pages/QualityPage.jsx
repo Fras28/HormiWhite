@@ -3,6 +3,8 @@ import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import SEO from '../components/SEO'
+import ControlCalidad from "../assets/Backgrounds/ControlCalidad.jpg"
+
 
 const QualityPage = () => {
   const steps = [
@@ -54,7 +56,7 @@ const QualityPage = () => {
           <img 
             alt="Laboratorio de control de calidad de HormiWhite" 
             className="absolute inset-0 h-full w-full object-cover opacity-40 mix-blend-overlay" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAenkeGPyP7D0XyUyHrTFfQdzJ85SMmdOKgXi-ytbeP58QxmC-SEzUrBKmUkPy9hXXHDoUNw3tkAMtGEF2gcgzBN9JXwkfwX_81cS4JgUx633cqOTBSoA8ajFyn36hw4INWtDk7Q3opJ5g0V4Ba1STMOVVHPJjkxugYJHmDBAMhsqIVBfF_wiSdUj2K9QyKe1EiMITSqcvGVX_iO2FCj4CAr305GyES_GcZ8j5bjwAMOzXsjqxY8EGi2PXQTZjxR3iC0XVZFU-MFFmY"
+            src={ControlCalidad}
             loading="eager"
           />
           <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-20">
