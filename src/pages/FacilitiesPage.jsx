@@ -4,12 +4,13 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import SEO from '../components/SEO'
 import Flota from "../assets/Backgrounds/Flota.jpg"
+import Almacen from "../assets/Backgrounds/Almacen.png"
 
 const FacilitiesPage = () => {
   const gallery = [
     { 
       title: 'Silos de Cemento de Alta Capacidad', 
-      img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCSwCF5DD5ivSfbzHglKRldak6UGqQ990ZF0_Sd_-WaMdRC-MTo93RBwoCPzcl2yMLw6GSZ9cynjUX7SOZj-nchtqMx4zVsF38PrTRIAyEFGBEpnFcDrIysjFM263_nB3RN_-5bciHTlO3AYRJ4_4ExVMXewy2rLtU6YfLWzlHmTuMkBWQlVLjoqKUDG7Zmnv9unjrVjImCtYkGUuCGXaZv_KZtrkXomY-hNtVTtdFQLFdiqLHJuYA13dsjtYRsvIUKQx-l3lBdZ3DV' 
+      img: Almacen
     },
     { 
       title: 'Flota de Motohormigoneras', 
