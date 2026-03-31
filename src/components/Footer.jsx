@@ -119,24 +119,59 @@ const Footer = () => (
                 location_on
               </span> 
               <span style={{ color: '#4a4a4a', textShadow: '0 1px 1px rgba(255,255,255,0.3)' }}>
-                Bahía Blanca, Buenos Aires
+              Av. Dasso 2264, Bahía Blanca
               </span>
             </li>
-            <li className="flex gap-3 items-center group cursor-pointer hover:translate-x-1 transition-transform">
+        
+            <li className="flex gap-1 items-center group cursor-pointer hover:translate-x-1 transition-transform">
               <span 
                 className="material-symbols-outlined text-lg transition-transform group-hover:scale-110"
                 style={{ color: '#65a30d', textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}
               >
                 phone
-              </span> 
+              </span>
+              <span> Ventas:</span> 
               <a 
                 href="tel:+542914000000"
                 style={{ color: '#4a4a4a', textShadow: '0 1px 1px rgba(255,255,255,0.3)' }}
                 className="hover:text-lime-700 transition-colors"
               >
-                +54 291 400-0000
+                +54 291 4791111
               </a>
             </li>
+            <li className="flex gap-1 items-center group cursor-pointer hover:translate-x-1 transition-transform">
+              <span 
+                className="material-symbols-outlined text-lg transition-transform group-hover:scale-110"
+                style={{ color: '#65a30d', textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}
+              >
+                phone
+              </span>
+              <span> Administración:</span> 
+              <a 
+                href="tel:+542914000000"
+                style={{ color: '#4a4a4a', textShadow: '0 1px 1px rgba(255,255,255,0.3)' }}
+                className="hover:text-lime-700 transition-colors"
+              >
+                +54 291 4763333
+              </a>
+            </li>
+            <li className="flex gap-1 items-center group cursor-pointer hover:translate-x-1 transition-transform">
+              <span 
+                className="material-symbols-outlined text-lg transition-transform group-hover:scale-110"
+                style={{ color: '#65a30d', textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}
+              >
+                phone
+              </span>
+              <span> Logística:</span> 
+              <a 
+                href="tel:+542914000000"
+                style={{ color: '#4a4a4a', textShadow: '0 1px 1px rgba(255,255,255,0.3)' }}
+                className="hover:text-lime-700 transition-colors"
+              >
+                +54 291 4497925
+              </a>
+            </li>
+            
             <li className="flex gap-3 items-center group cursor-pointer hover:translate-x-1 transition-transform">
               <span 
                 className="material-symbols-outlined text-lg transition-transform group-hover:scale-110"
