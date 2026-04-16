@@ -132,7 +132,7 @@ const Footer = () => (
               </span>
               <span> Ventas:</span> 
               <a 
-                href="tel:+542914000000"
+                href="tel:+5492914791111"
                 style={{ color: '#4a4a4a', textShadow: '0 1px 1px rgba(255,255,255,0.3)' }}
                 className="hover:text-lime-700 transition-colors"
               >
@@ -148,7 +148,7 @@ const Footer = () => (
               </span>
               <span> Administración:</span> 
               <a 
-                href="tel:+542914000000"
+                href="tel:+5492914791111"
                 style={{ color: '#4a4a4a', textShadow: '0 1px 1px rgba(255,255,255,0.3)' }}
                 className="hover:text-lime-700 transition-colors"
               >
@@ -164,7 +164,7 @@ const Footer = () => (
               </span>
               <span> Logística:</span> 
               <a 
-                href="tel:+542914000000"
+                href="tel:+5492914791111"
                 style={{ color: '#4a4a4a', textShadow: '0 1px 1px rgba(255,255,255,0.3)' }}
                 className="hover:text-lime-700 transition-colors"
               >
@@ -180,11 +180,11 @@ const Footer = () => (
                 mail
               </span> 
               <a 
-                href="mailto:ventas@hormiwhite.com"
+                href="mailto:ventas@hormiwhite.com.ar"
                 style={{ color: '#4a4a4a', textShadow: '0 1px 1px rgba(255,255,255,0.3)' }}
                 className="hover:text-lime-700 transition-colors"
               >
-                ventas@hormiwhite.com
+                ventas@hormiwhite.com.ar
               </a>
             </li>
           </ul>

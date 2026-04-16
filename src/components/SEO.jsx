@@ -33,7 +33,7 @@ const SEO = ({
     description: defaultDescription,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Mosconi 1655',
+      streetAddress: 'Av. Santiago Dasso 2264',
       addressLocality: 'Bahía Blanca',
       addressRegion: 'Buenos Aires',
       postalCode: '8000',
@@ -44,8 +44,8 @@ const SEO = ({
       latitude: '-38.7183',
       longitude: '-62.2665'
     },
-    telephone: '+54-291-400-0000',
-    email: 'ventas@hormiwhite.com',
+    telephone: '+5492914791111',
+    email: 'ventas@hormiwhite.com.ar',
     sameAs: [
       'https://www.facebook.com/hormiwhite',
       'https://www.instagram.com/hormiwhite',

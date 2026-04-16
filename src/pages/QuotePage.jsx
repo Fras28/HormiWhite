@@ -24,14 +24,14 @@ const QuotePage = () => {
       name: 'HormiWhite S.A.',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Mosconi 1655',
+        streetAddress: 'Av. Santiago Dasso 2264',
         addressLocality: 'Bahía Blanca',
         addressRegion: 'Buenos Aires',
         postalCode: '8000',
         addressCountry: 'AR'
       },
-      telephone: '+54-291-400-0000',
-      email: 'ventas@hormiwhite.com',
+      telephone: '+5492914791111',
+      email: 'ventas@hormiwhite.com.ar',
       openingHours: 'Mo-Fr 07:00-18:00, Sa 08:00-13:00',
       priceRange: '$$$'
     }
@@ -106,7 +106,7 @@ const QuotePage = () => {
                     <span className="material-symbols-outlined text-primary" aria-hidden="true">location_on</span>
                     <div>
                       <p className="font-semibold">Dirección</p>
-                      <p>Mosconi 1655, Bahía Blanca</p>
+                      <p>Av. Santiago Dasso 2264, Bahía Blanca</p>
                       <p className="text-sm text-slate-500">Buenos Aires, Argentina</p>
                     </div>
                   </div>
@@ -114,14 +114,14 @@ const QuotePage = () => {
                     <span className="material-symbols-outlined text-primary" aria-hidden="true">call</span>
                     <div>
                       <p className="font-semibold">Teléfono</p>
-                      <a href="tel:+542914000000" className="hover:text-primary transition-colors">+54 291 400-0000</a>
+                      <a href="tel:+5492914791111" className="hover:text-primary transition-colors">+54 291 400-0000</a>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <span className="material-symbols-outlined text-primary" aria-hidden="true">mail</span>
                     <div>
                       <p className="font-semibold">Email</p>
-                      <a href="mailto:ventas@hormiwhite.com" className="hover:text-primary transition-colors">ventas@hormiwhite.com</a>
+                      <a href="mailto:ventas@hormiwhite.com.ar" className="hover:text-primary transition-colors">ventas@hormiwhite.com.ar</a>
                     </div>
                   </div>
                   <div className="flex gap-4">

@@ -34,11 +34,11 @@ const HomePage = () => {
         image: 'https://hormiwhite.com/logo.png',
         '@id': 'https://hormiwhite.com',
         url: 'https://hormiwhite.com',
-        telephone: '+54-291-400-0000',
+        telephone: '+5492914791111',
         priceRange: '$$$',
         address: {
           '@type': 'PostalAddress',
-          streetAddress: 'Mosconi 1655',
+          streetAddress: 'Av. Santiago Dasso 2264',
           addressLocality: 'Bahía Blanca',
           addressRegion: 'Buenos Aires',
           postalCode: '8000',
