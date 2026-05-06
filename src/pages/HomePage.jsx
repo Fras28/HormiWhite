@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import SEO from '../components/SEO'
-import ConcreteScene from '../components/ConcreteScene'
+import HeroShowcase from '../components/HeroShowcase'
 import ParallaxStats from '../components/ParallaxStats'
 import bgHome from "../assets/Backgrounds/bgHero.mp4"
 import Logistrica from "../assets/Backgrounds/LogisticaIndustrial.jpg"
@@ -12,7 +12,6 @@ import Logistrica from "../assets/Backgrounds/LogisticaIndustrial.jpg"
 const HomePage = () => {
   const navigate = useNavigate()
 
-  // Schema.org específico para la página de inicio (WebSite + LocalBusiness)
   const homeStructuredData = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -20,15 +19,7 @@ const HomePage = () => {
         '@type': 'WebSite',
         name: 'HormiWhite',
         url: 'https://hormiwhite.com.ar',
-        description: 'Hormigón elaborado en Bahía Blanca e Ingeniero White',
-        potentialAction: {
-          '@type': 'SearchAction',
-          target: {
-            '@type': 'EntryPoint',
-            urlTemplate: 'https://hormiwhite.com.ar/search?q={search_term_string}'
-          },
-          'query-input': 'required name=search_term_string'
-        }
+        description: 'Hormigón elaborado en Bahía Blanca e Ingeniero White'
       },
       {
         '@type': 'LocalBusiness',
@@ -54,18 +45,8 @@ const HomePage = () => {
           longitude: -62.2665
         },
         openingHoursSpecification: [
-          {
-            '@type': 'OpeningHoursSpecification',
-            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-            opens: '07:00',
-            closes: '18:00'
-          },
-          {
-            '@type': 'OpeningHoursSpecification',
-            dayOfWeek: ['Saturday'],
-            opens: '08:00',
-            closes: '13:00'
-          }
+          { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '07:00', closes: '18:00' },
+          { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Saturday'], opens: '08:00', closes: '13:00' }
         ]
       }
     ]
@@ -83,28 +64,21 @@ const HomePage = () => {
 
       <Header />
       <main className="flex-1">
-        {/* ===== HERO con escena 3D ===== */}
+        {/* ===== HERO ===== */}
         <div className="@container relative">
           <div className="relative flex min-h-[88vh] flex-col px-6 py-20 lg:px-20 overflow-hidden">
-            {/* Video de fondo */}
             <video
               className="absolute inset-0 z-0 w-full h-full object-cover"
-              autoPlay
-              muted
-              loop
-              playsInline
-              aria-hidden="true"
+              autoPlay muted loop playsInline aria-hidden="true"
             >
               <source src={bgHome} type="video/mp4" />
             </video>
-            {/* Overlay para legibilidad */}
             <div
               className="absolute inset-0 z-[1]"
-              style={{ background: "linear-gradient(rgba(20, 30, 20, 0.78), rgba(35, 45, 35, 0.55))" }}
+              style={{ background: 'linear-gradient(rgba(15, 25, 18, 0.82), rgba(30, 50, 35, 0.55))' }}
             />
 
-            {/* Contenido + Escena 3D */}
-            <div className="relative z-10 flex-1 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center max-w-7xl mx-auto w-full">
+            <div className="relative z-10 flex-1 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center max-w-7xl mx-auto w-full">
               {/* Texto */}
               <div className="lg:col-span-7 flex flex-col gap-7">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 border border-primary/30 w-fit">
@@ -113,12 +87,12 @@ const HomePage = () => {
                     Bahía Blanca · Ingeniero White
                   </span>
                 </div>
-                <h1 className="text-white text-5xl font-black leading-tight tracking-tight md:text-7xl">
-                  Hormigón elaborado, <span className="text-primary">listo para tu obra</span>.
+                <h1 className="text-white text-5xl font-black leading-[1.05] tracking-tight md:text-7xl">
+                  Hormigón elaborado, <span className="bg-gradient-to-r from-emerald-300 via-primary to-lime-300 bg-clip-text text-transparent">listo para tu obra</span>.
                 </h1>
-                <p className="text-slate-200 text-lg md:text-xl font-medium leading-relaxed max-w-2xl">
+                <p className="text-slate-200/90 text-lg md:text-xl font-medium leading-relaxed max-w-2xl">
                   Producción propia, flota de 22 mixers y 2 bombas telescópicas. 3 plantas operativas y laboratorio
-                  propio que valida cada metro cúbico que sale a obra.
+                  interno que valida cada metro cúbico que sale a obra.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <button
@@ -140,18 +114,18 @@ const HomePage = () => {
                 </div>
               </div>
 
-              {/* Escena 3D */}
-              <div className="lg:col-span-5 h-[340px] sm:h-[420px] lg:h-[520px] w-full">
-                <ConcreteScene className="w-full h-full" />
+              {/* Showcase moderno (cards con tilt 3D + glassmorphism) */}
+              <div className="lg:col-span-5 w-full">
+                <HeroShowcase />
               </div>
             </div>
           </div>
         </div>
 
-        {/* ===== Stats con parallax (capacidad operativa real) ===== */}
+        {/* ===== Parallax stats ===== */}
         <ParallaxStats />
 
-        {/* ===== Logística industrial (sección existente, copy actualizado) ===== */}
+        {/* ===== Logística ===== */}
         <section className="px-6 lg:px-20 py-24 @container max-w-7xl mx-auto" aria-label="Ventajas competitivas">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="flex flex-col gap-6 flex-1">
@@ -163,31 +137,14 @@ const HomePage = () => {
                 colocar hormigón donde haga falta. Cada despacho sale validado por nuestro laboratorio interno.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
-                <div className="flex gap-3">
-                  <span className="material-symbols-outlined text-primary" aria-hidden="true">check_circle</span>
-                  <span className="font-bold text-slate-800 dark:text-slate-200">Laboratorio propio</span>
-                </div>
-                <div className="flex gap-3">
-                  <span className="material-symbols-outlined text-primary" aria-hidden="true">check_circle</span>
-                  <span className="font-bold text-slate-800 dark:text-slate-200">Bombeo telescópico</span>
-                </div>
-                <div className="flex gap-3">
-                  <span className="material-symbols-outlined text-primary" aria-hidden="true">check_circle</span>
-                  <span className="font-bold text-slate-800 dark:text-slate-200">Mando remoto en cada mixer</span>
-                </div>
-                <div className="flex gap-3">
-                  <span className="material-symbols-outlined text-primary" aria-hidden="true">check_circle</span>
-                  <span className="font-bold text-slate-800 dark:text-slate-200">Cobertura Bahía Blanca e Ing. White</span>
-                </div>
+                <div className="flex gap-3"><span className="material-symbols-outlined text-primary" aria-hidden="true">check_circle</span><span className="font-bold text-slate-800 dark:text-slate-200">Laboratorio propio</span></div>
+                <div className="flex gap-3"><span className="material-symbols-outlined text-primary" aria-hidden="true">check_circle</span><span className="font-bold text-slate-800 dark:text-slate-200">Bombeo telescópico</span></div>
+                <div className="flex gap-3"><span className="material-symbols-outlined text-primary" aria-hidden="true">check_circle</span><span className="font-bold text-slate-800 dark:text-slate-200">Mando remoto en cada mixer</span></div>
+                <div className="flex gap-3"><span className="material-symbols-outlined text-primary" aria-hidden="true">check_circle</span><span className="font-bold text-slate-800 dark:text-slate-200">Cobertura Bahía Blanca e Ing. White</span></div>
               </div>
             </div>
             <figure className="flex-1 w-full h-[400px] rounded-2xl overflow-hidden relative border-4 border-white dark:border-background-dark shadow-2xl">
-              <img
-                alt="Planta industrial de HormiWhite produciendo hormigón elaborado en Bahía Blanca"
-                className="w-full h-full object-cover"
-                src={Logistrica}
-                loading="lazy"
-              />
+              <img alt="Planta industrial de HormiWhite" className="w-full h-full object-cover" src={Logistrica} loading="lazy" />
             </figure>
           </div>
         </section>
